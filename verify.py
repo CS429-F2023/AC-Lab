@@ -3,7 +3,7 @@ AARCH64_TOKENS = ['.arch', '.text', '.align', '.p2align', '.global', '.type', '.
 COMMENT_TOKEN = '//'
 LABEL_START = '.'
 function_names = ['popcntRD', 'BCD_to_long', 'str_len', 'unicode_to_UTF8', 'gcd_rec', 'gcd_iter']
-valid_instr = ['ldur', 'stur', 'movk', 'movz', 'add', 'adds', 'subs', 'mvn', 'orr', 'eor', 'ands', 'ubfm', 'asr', 'lsl', 'lsr', 'b', 'b.', 'bl', 'ret', 'nop', 'hlt']
+valid_instr = ['ldur', 'stur', 'movk', 'movz', 'add', 'adds', 'subs', 'mvn', 'orr', 'eor', 'ands', 'ubfm', 'asr', 'lsl', 'lsr', 'b', 'b.', 'bl', 'ret', 'nop', 'hlt', 'cmp', 'adr', 'adrp', 'tst']
 
 def verify(lines):
     line_num = 0
