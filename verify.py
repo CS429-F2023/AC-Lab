@@ -2,8 +2,7 @@ FILENAME = 'student_a64_template.s'
 AARCH64_TOKENS = ['.arch', '.text', '.align', '.p2align', '.global', '.type', '.size', '.section', '.data']
 COMMENT_TOKEN = '//'
 LABEL_START = '.'
-function_names = ['popcntRD', 'BCD_to_long', 'str_len', 'unicode_to_UTF8', 'gcd_rec', 'gcd_iter']
-valid_instr = ['ldur', 'stur', 'movk', 'movz', 'add', 'adds', 'subs', 'mvn', 'orr', 'eor', 'ands', 'ubfm', 'asr', 'lsl', 'lsr', 'b', 'b.', 'bl', 'ret', 'nop', 'hlt', 'cmp', 'adrp', 'tst']
+valid_instr = ['ldur', 'stur', 'movk', 'movz', 'adrp', 'add', 'adds', 'sub', 'subs', 'cmp', 'mvn', 'orr', 'eor', 'ands', 'tst', 'lsl', 'lsr', 'asr', 'b', 'b.', 'bl', 'ret', 'nop']
 
 def verify(lines):
     line_num = 0
